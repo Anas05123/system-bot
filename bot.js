@@ -1327,66 +1327,6 @@ client.on("message", message => {
     }
 });
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 client.on('message' , message => {
   var prefix = "$";
   if(message.author.bot) return;
@@ -1423,25 +1363,6 @@ client.on('message' , message => {
     }
 });
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-   
-   
- 
-   
-   
-   
-   
- 
 client.on('message',  (message) => {
         if(message.content.startsWith('$punch')) {
   let user = message.mentions.users.first();
@@ -1476,14 +1397,7 @@ client.on('message',  (message) => {
   })
         }  
 });
- 
- 
- 
- 
- 
- 
- 
- 
+
 client.on("message", message => {
     var prefix = "$"
     if (!message.content.startsWith(prefix)) return;
@@ -1496,13 +1410,7 @@ client.on("message", message => {
     message.channel.send(image)
         }
     });
- 
- 
- 
- 
- 
- 
- 
+
   client.on('message' , async (message) => {
     if (message.content.startsWith(prefix + 'cat')) {
  
@@ -1519,9 +1427,7 @@ client.on("message", message => {
  
 }
 });
- 
- 
- 
+
   const superagent = require('superagent')
 client.on('message' , async (message) => {
     if (message.content.startsWith(prefix + 'dog')) {
@@ -1594,9 +1500,6 @@ message.channel.send('**لديك 15 ثانيه**').then(msg => {
 }
 });
  
- 
- 
- 
 client.on('message', message => {
     if (!points[message.author.id]) points[message.author.id] = {
         points: 0,
@@ -1628,10 +1531,7 @@ m.edit({embed: new Discord.RichEmbed().setTitle('لديك 15 ثانيه للاج
             })
     }
     });
- 
- 
- 
- 
+
 client.on('message', message => {
 if (!points[message.author.id]) points[message.author.id] = {
     points: 50,
@@ -1786,10 +1686,6 @@ message.channel.send('**لديك 15 ثانيه لتفكك الكلمه **').then
 }
 });
  
- 
- 
- 
- 
   client.on('message', message => {
     var prefix = "$"
 var args = message.content.split(" ").slice(1);    
@@ -1835,11 +1731,7 @@ message.channel.send({embed});
 }
  
 });
- 
- 
- 
- 
- 
+
 client.on('message',async message => {
     if(message.content.startsWith(prefix + "setmember")) {
     if(!message.guild.member(message.author).hasPermissions('MANAGE_CHANNELS')) return message.reply('❌ **لا تمتلك صلاحيه**');
@@ -1857,12 +1749,6 @@ client.on('message',async message => {
     });
     }
   });
- 
- 
- 
- 
- 
- 
  
     client.on('message',async message => {
     if(message.content.startsWith(prefix + "setbot")) {
